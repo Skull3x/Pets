@@ -200,6 +200,7 @@ abstract class Pets extends Creature {
 		} else {
 			if (isset(main::$pet[$this->owner->getName()])) {
 				$this->kill();
+				$this->despawnFromAll();
 			}
 		}
 	}
